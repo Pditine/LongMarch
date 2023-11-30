@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u5168_0"
+      name: 1
       rect:
         serializedVersion: 2
         x: 215
@@ -157,7 +157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_1"
+      name: 3
       rect:
         serializedVersion: 2
         x: 864
@@ -186,7 +186,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_3"
+      name: 4
       rect:
         serializedVersion: 2
         x: 1220
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_4"
+      name: 2
       rect:
         serializedVersion: 2
         x: 541
@@ -241,11 +241,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_5"
+      name: 5
       rect:
         serializedVersion: 2
         x: 1546
-        y: 150
+        y: 152
         width: 246
         height: 479
       alignment: 7
@@ -270,7 +270,7 @@ TextureImporter:
         width: 10
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_7"
+      name: 7
       rect:
         serializedVersion: 2
         x: 2204
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_8"
+      name: 8
       rect:
         serializedVersion: 2
         x: 2557
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u5168_9"
+      name: 6
       rect:
         serializedVersion: 2
         x: 1870
@@ -356,16 +356,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u5168_0": -1922522738
-      "\u5168_1": -1879334734
+      1: -1922522738
+      2: 1527682057
+      3: -1879334734
+      4: 1454706088
+      5: 1864538113
+      6: 1120387583
+      7: 2113698065
+      8: 1127079849
+      "\u5168_0": 549830912
       "\u5168_2": 1649577855
-      "\u5168_3": 1454706088
-      "\u5168_4": 1527682057
-      "\u5168_5": 1864538113
       "\u5168_6": 441105874
-      "\u5168_7": 2113698065
-      "\u5168_8": 1127079849
-      "\u5168_9": 1120387583
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
