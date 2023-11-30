@@ -39,8 +39,7 @@ namespace Pditine.Scripts.Item.Paper
 
         private void BeCollected()
         {
-            //todo:加数据
-            //LogManager.Instance.CollectData(dataIndex);
+            LogManager.Instance.CollectData(dataIndex);
             Instantiate(_floatingEffect, Camera.main.WorldToScreenPoint(transform.position) , quaternion.identity,_canvas);
             Destroy(gameObject);
         }

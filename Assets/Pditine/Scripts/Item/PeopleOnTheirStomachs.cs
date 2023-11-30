@@ -2,12 +2,13 @@
 using UnityEngine.UI;
 using System.Collections;
 using Pditine.Scripts.Tool;
+using UnityEngine.Serialization;
 
 namespace Pditine.Scripts.Item
 {
     public class PeopleOnTheirStomachs : ItemBase
     {
-        private Text _bulletCountUI;
+        [SerializeField]private Text bulletCountUI;
         private int _bulletCount;
         private Coroutine _fireCoroutine;
         
@@ -29,7 +30,7 @@ namespace Pditine.Scripts.Item
             else
             {
                 _bulletCount += x;
-                _bulletCountUI.text = _bulletCount.ToString();
+                bulletCountUI.text = _bulletCount.ToString();
             }
         }
 
