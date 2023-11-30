@@ -1,10 +1,11 @@
-﻿using Pditine.Scripts.Log;
+﻿using System;
+using Pditine.Scripts.Log;
 using Unity.Mathematics;
 using UnityEngine;
 
 namespace Pditine.Scripts.Item.Paper
 {
-    public class PaperItem : MonoBehaviour
+    public class PaperItem : ItemBase
     {
         [SerializeField] private int dataIndex;
         private GameObject _floatingEffect;
@@ -16,19 +17,29 @@ namespace Pditine.Scripts.Item.Paper
             _canvas = GameObject.Find("Canvas").transform;
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        protected override void PressEAction()
         {
-            Debug.Log(other.name);
-            if (other.CompareTag("Player"))
-            {
-                BeCollected();
-            }
+            
+        }
+
+        protected override void PlayerEnterAction()
+        {
+            BeCollected();
+        }
+
+        protected override void PlayerExitAction()
+        {
+
+        }
+
+        protected override void PlayerStayAction()
+        {
+
         }
 
         private void BeCollected()
         {
-            //todo:加数据
-            //LogManager.Instance.CollectData(dataIndex);
+            LogManager.Instance.CollectData(dataIndex);
             Instantiate(_floatingEffect, Camera.main.WorldToScreenPoint(transform.position) , quaternion.identity,_canvas);
             Destroy(gameObject);
         }
