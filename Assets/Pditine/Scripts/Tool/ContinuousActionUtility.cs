@@ -7,16 +7,16 @@ namespace Pditine.Scripts.Tool
 {
     public static class ContinuousActionUtility
     {
-        public static Coroutine ContinuousAction(float timeRange ,UnityAction action)
+        public static Coroutine ContinuousAction(float minTime, float maxTime ,UnityAction action)
         {
-            return MonoManager.Instance.StartCoroutine(DoContinuousAction(timeRange, action));
+            return MonoManager.Instance.StartCoroutine(DoContinuousAction(minTime,maxTime, action));
         }
         
-        private static IEnumerator DoContinuousAction(float timeRange ,UnityAction action)
+        private static IEnumerator DoContinuousAction(float minTime, float maxTime ,UnityAction action)
         {
             while (true)
             {
-                yield return new WaitForSeconds(Random.Range(0f, timeRange));
+                yield return new WaitForSeconds(Random.Range(minTime, maxTime));
                 action?.Invoke();
             }
         }

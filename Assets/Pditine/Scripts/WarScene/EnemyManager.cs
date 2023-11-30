@@ -14,8 +14,7 @@ namespace Pditine.Scripts.WarScene
 
         private void Start()
         {
-            InvokeRepeating(nameof(CreateEnemy),1,3);
-            _createEnemyCoroutine = ContinuousActionUtility.ContinuousAction(4, CreateEnemy);
+            _createEnemyCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, CreateEnemy);
         }
 
         public void StopCreateEnemy()
