@@ -18,6 +18,7 @@ namespace Pditine.Scripts.Item.Paper
 
         private void OnTriggerEnter2D(Collider2D other)
         {
+            Debug.Log(other.name);
             if (other.CompareTag("Player"))
             {
                 BeCollected();
@@ -26,7 +27,8 @@ namespace Pditine.Scripts.Item.Paper
 
         private void BeCollected()
         {
-            LogManager.Instance.CollectData(dataIndex);
+            //todo:加数据
+            //LogManager.Instance.CollectData(dataIndex);
             Instantiate(_floatingEffect, Camera.main.WorldToScreenPoint(transform.position) , quaternion.identity,_canvas);
             Destroy(gameObject);
         }
