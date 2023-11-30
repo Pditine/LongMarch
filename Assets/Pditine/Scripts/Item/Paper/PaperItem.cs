@@ -8,10 +8,12 @@ namespace Pditine.Scripts.Item.Paper
     {
         [SerializeField] private int dataIndex;
         private GameObject _floatingEffect;
+        private Transform _canvas;
 
         private void Start()
         {
             _floatingEffect = Resources.Load<GameObject>("Prefabs/PaperFloatingEffect");
+            _canvas = GameObject.Find("Canvas").transform;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -25,7 +27,7 @@ namespace Pditine.Scripts.Item.Paper
         private void BeCollected()
         {
             LogManager.Instance.CollectData(dataIndex);
-            Instantiate(_floatingEffect, transform.position, quaternion.identity);
+            Instantiate(_floatingEffect, Camera.main.WorldToScreenPoint(transform.position) , quaternion.identity,_canvas);
             Destroy(gameObject);
         }
         
