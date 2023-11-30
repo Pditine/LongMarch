@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Pditine.Scripts.Tool;
 
 namespace Pditine.Scripts.Item
 {
@@ -8,11 +9,15 @@ namespace Pditine.Scripts.Item
     {
         private Text _bulletCountUI;
         private int _bulletCount;
-
+        private Coroutine _fireCoroutine;
+        
         private void Start()
         {
             ChangeBulletCount(10);
-            StartCoroutine(ContinuousReduceBulletCount());
+            _fireCoroutine = ContinuousActionUtility.ContinuousAction(2, () =>
+            {
+                ChangeBulletCount(-1);
+            });
         }
 
         private void ChangeBulletCount(int x)
@@ -30,16 +35,7 @@ namespace Pditine.Scripts.Item
 
         public void StopFire()
         {
-            StopCoroutine(ContinuousReduceBulletCount());
-        }
-        
-        private IEnumerator ContinuousReduceBulletCount()
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(Random.Range(0, 2f));
-                ChangeBulletCount(-1);
-            }
+            StopCoroutine(_fireCoroutine);
         }
         
         protected override void PressEAction()
