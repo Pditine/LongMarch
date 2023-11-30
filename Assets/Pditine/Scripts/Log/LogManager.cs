@@ -12,7 +12,7 @@ namespace Pditine.Scripts.Log
         [SerializeField] private Text historicalFactContent;
         
         [SerializeField] private List<LogData> allData = new();
-        private List<LogData> _collectedData = new();
+        private readonly List<LogData> _collectedData = new();
         private int _currentIndex;
         public void TernLeft()
         {
