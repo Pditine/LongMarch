@@ -43,8 +43,8 @@ namespace Hmxs.Scripts.Protagonist
 
         private void CheckFlip()
         {
-            if ((_isFacingRight && _rigidbody.velocity.x < 0) ||
-                (!_isFacingRight && _rigidbody.velocity.x > 0))
+            if ((_isFacingRight && _rigidbody.velocity.x < -0.01f) ||
+                (!_isFacingRight && _rigidbody.velocity.x > 0.01f))
                 Flip();
         }
 
