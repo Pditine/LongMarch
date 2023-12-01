@@ -184,5 +184,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  movePoint:
-  - {fileID: 8264942520970830820}
+  movePoint: []
