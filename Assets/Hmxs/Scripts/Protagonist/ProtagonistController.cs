@@ -15,6 +15,8 @@ namespace Hmxs.Scripts.Protagonist
         private Animator _animator;
         private SpriteRenderer _spriteRenderer;
 
+        private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
@@ -26,6 +28,7 @@ namespace Hmxs.Scripts.Protagonist
         {
             InputHandler();
             CheckFlip();
+            UpdateAnimState();
         }
 
         private void FixedUpdate()
@@ -54,6 +57,11 @@ namespace Hmxs.Scripts.Protagonist
         private void ApplyMovement()
         {
             _rigidbody.velocity = new Vector2(_movementInput * speed, _rigidbody.velocity.y);
+        }
+
+        private void UpdateAnimState()
+        {
+            _animator.SetBool(IsWalking, Mathf.Abs(_rigidbody.velocity.x) > 0.01);
         }
 
         private void OnTriggerEnter2D(Collider2D other)
