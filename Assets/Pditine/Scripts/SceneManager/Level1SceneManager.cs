@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Pditine.Scripts.SceneManager
 {
-    public class Level0SceneManager : MonoBehaviour
+    public class Level1SceneManager : MonoBehaviour
     {
         [SerializeField] private Image logUI;
         [SerializeField] private Image playUI;

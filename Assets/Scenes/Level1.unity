@@ -1109,7 +1109,7 @@ GameObject:
   - component: {fileID: 443636197}
   - component: {fileID: 443636198}
   m_Layer: 0
-  m_Name: Level0SceneManager
+  m_Name: Level1SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
