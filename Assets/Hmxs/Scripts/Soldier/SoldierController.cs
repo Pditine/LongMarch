@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Hmxs.Scripts.Soldier
@@ -7,14 +8,28 @@ namespace Hmxs.Scripts.Soldier
     {
         public float speed;
 
-        public float xLimit;
+        public List<Transform> movePoint;
+
+        private Vector3 _direction;
+        private int _currentTargetPointIndex;
+
+        private void Start()
+        {
+            _currentTargetPointIndex = 0;
+        }
 
         private void Update()
         {
-            transform.position += new Vector3(speed, 0, 0) * Time.deltaTime;
+            _direction = (movePoint[_currentTargetPointIndex].position - transform.position).normalized;
+            transform.Translate(_direction * (Time.deltaTime * speed));
 
-            if (transform.position.x > xLimit)
-                Destroy(gameObject);
+            if (Vector3.Distance(transform.position, movePoint[_currentTargetPointIndex].position) < 0.05f)
+            {
+                if (_currentTargetPointIndex == movePoint.Count - 1)
+                    Destroy(gameObject.transform.parent.gameObject);
+                else
+                    _currentTargetPointIndex += 1;
+            }
         }
     }
 }

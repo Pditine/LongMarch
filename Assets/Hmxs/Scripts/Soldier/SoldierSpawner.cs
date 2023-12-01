@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Hmxs.Toolkit.Flow.Timer;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ namespace Hmxs.Scripts.Soldier
 {
     public class SoldierSpawner : MonoBehaviour
     {
-        public GameObject soldierPrefab;
+        public List<GameObject> soldierPrefabList;
         public float spawnInterval;
 
         private Timer _spawnTimer;
@@ -15,7 +15,7 @@ namespace Hmxs.Scripts.Soldier
         {
             _spawnTimer = Timer.Register(
                 duration: spawnInterval,
-                onComplete: () => Instantiate(soldierPrefab, transform),
+                onComplete: () => Instantiate(soldierPrefabList[Random.Range(0, soldierPrefabList.Count)], transform),
                 isLooped: true);
         }
 
