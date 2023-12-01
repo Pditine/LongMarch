@@ -3,46 +3,42 @@ using UnityEngine;
 
 namespace Pditine.Scripts.Item
 {
-    public class BerryBush : MonoBehaviour
+    public class BerryBush : ItemBase
     {
         [SerializeField] private Sprite notBeEatSprite;
         [SerializeField] private Sprite hasBeenEatenSprite;
         private SpriteRenderer SpriteRenderer => GetComponent<SpriteRenderer>();
-        private bool _canBeEaten;
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void Start()
         {
-
-            if (other.CompareTag("Player"))
-            {
-                //todo:玩家头上的E   
-                _canBeEaten = true;
-            }
+            SpriteRenderer.sprite = notBeEatSprite;
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        protected override void PressEAction()
         {
-            if (other.CompareTag("Player"))
-            {
-                //todo:玩家头上的E   
-                _canBeEaten = false;
-            }
-
+            BeEaten();
         }
 
-        private void Update()
+        protected override void PlayerEnterAction()
         {
-            if (_canBeEaten)
-                BeEaten();
+            //todo:玩家头上的E   
         }
+
+        protected override void PlayerExitAction()
+        {
+            //todo:玩家头上的E   
+        }
+
+        protected override void PlayerStayAction()
+        {
+
+        }
+        
 
         private void BeEaten()
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                //todo:玩家恢复饥饿值
-                SpriteRenderer.sprite = hasBeenEatenSprite;
-            }
+            //todo:玩家恢复饥饿值
+            SpriteRenderer.sprite = hasBeenEatenSprite;
         }
     }
 }
