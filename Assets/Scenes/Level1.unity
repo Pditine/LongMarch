@@ -538,17 +538,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1402038343}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &437653708 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-  m_PrefabInstance: {fileID: 1152651584}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &481865144
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +699,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 574461449}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &608159513
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,6 +746,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 5147193 (find coroutine problem)
 --- !u!1 &659006382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,26 +1853,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 831434318818864490, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-      propertyPath: m_FontData.m_RichText
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1443330631030737287, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
       propertyPath: m_Name
       value: BasicCanvas
@@ -2362,17 +2334,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1417803909 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3088200539670760811, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
-  m_PrefabInstance: {fileID: 1152651584}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1516343404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,7 +3048,10 @@ SceneRoots:
   - {fileID: 1152651584}
   - {fileID: 890411542}
   - {fileID: 1406864877}
+<<<<<<< HEAD
   - {fileID: 608159515}
 =======
   - {fileID: 999675000}
 >>>>>>> parent of 652754f (test war scene)
+=======
+>>>>>>> parent of 5147193 (find coroutine problem)

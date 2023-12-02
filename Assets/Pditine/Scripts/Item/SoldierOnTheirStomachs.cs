@@ -18,9 +18,13 @@ namespace Pditine.Scripts.Item
         [SerializeField] private List<Sprite> sprites = new();
         private SoldierState _state = SoldierState.Fire;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private Animator Animator => GetComponent<Animator>();
 =======
 >>>>>>> parent of 652754f (test war scene)
+=======
+        private Animator Animator => GetComponentInChildren<Animator>();
+>>>>>>> parent of 5147193 (find coroutine problem)
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
         
         private void Start()

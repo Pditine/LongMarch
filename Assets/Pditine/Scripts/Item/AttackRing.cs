@@ -15,45 +15,46 @@ namespace Pditine.Scripts.Item
         {
             while (transform.localScale.x>0.5f)
             {
-                transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
+                transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x<0.95f)
             {
-                transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+                transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x>0.5f)
             {
-                transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
+                transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x<0.95f)
             {
-                transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+                transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
 <<<<<<< HEAD
             while (SpriteRenderer.color.a>0.05f)
             {
-                SpriteRenderer.color -= new Color(0, 0, 0,0.03f);
+                SpriteRenderer.color -= new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a<0.95f)
             {
-                SpriteRenderer.color += new Color(0, 0, 0,0.03f);
+                SpriteRenderer.color += new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a>0.05f)
             {
-                SpriteRenderer.color -= new Color(0, 0, 0,0.03f);
+                SpriteRenderer.color -= new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a<0.95f)
             {
-                SpriteRenderer.color += new Color(0, 0, 0,0.03f);
+                SpriteRenderer.color += new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
+<<<<<<< HEAD
 
             _canDead = true;
 
@@ -64,6 +65,9 @@ namespace Pditine.Scripts.Item
             
             
 >>>>>>> parent of 879203b (do something , whatever)
+=======
+            
+>>>>>>> parent of 5147193 (find coroutine problem)
         }
 
 
