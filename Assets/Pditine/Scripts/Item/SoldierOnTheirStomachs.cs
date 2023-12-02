@@ -17,6 +17,7 @@ namespace Pditine.Scripts.Item
         private Coroutine _fireCoroutine;
         [SerializeField] private List<Sprite> sprites = new();
         private SoldierState _state = SoldierState.Fire;
+        private Animator Animator => GetComponentInChildren<Animator>();
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
         
         private void Start()
@@ -60,6 +61,7 @@ namespace Pditine.Scripts.Item
         {
             _fireCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, () =>
             {
+                Animator.SetTrigger("Fire");
                 ChangeBulletCount(-1);
             });
         }
@@ -75,6 +77,11 @@ namespace Pditine.Scripts.Item
             ChangeBulletCount(5);
         }
 
+        private void NoFire()
+        {
+            Animator.SetTrigger("NoFire");
+        }
+        
         protected override void PlayerEnterAction()
         {
 

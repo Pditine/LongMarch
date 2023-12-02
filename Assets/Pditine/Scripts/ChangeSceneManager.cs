@@ -12,8 +12,7 @@ namespace Pditine.Scripts
         
         private void Start()
         {
-            // if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex==0)
-            //     FadeUtility.FadeOut(BlackPanel,80);
+            FadeUtility.FadeOut(BlackPanel,80);
         }
 
         public void ChangeScene(int levelIndex)
