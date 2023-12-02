@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using Pditine.Scripts.SceneManager;
+using Pditine.Scripts.LevelSceneManager;
 using UnityEngine;
 
 namespace Pditine.Scripts.Item

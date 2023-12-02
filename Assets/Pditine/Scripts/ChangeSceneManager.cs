@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using Hmxs.Toolkit.Base.Singleton;
 using Pditine.Scripts.Tool;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 namespace Pditine.Scripts
 {
-    public class ChangeSceneManager : MonoBehaviour
+    public class ChangeSceneManager : SingletonMono<ChangeSceneManager>
     {
         private Image BlackPanel =>GameObject.Find("BlackPanel").GetComponent<Image>();
         private Text LevelHead =>GameObject.Find("LevelHead").GetComponent<Text>();
@@ -12,8 +14,7 @@ namespace Pditine.Scripts
         
         private void Start()
         {
-            // if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex==0)
-            //     FadeUtility.FadeOut(BlackPanel,80);
+            FadeUtility.FadeOut(BlackPanel,80);
         }
 
         public void ChangeScene(int levelIndex)
@@ -25,12 +26,26 @@ namespace Pditine.Scripts
                 {
                     FadeUtility.FadeOut(LevelHead,50, () =>
                     {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(levelIndex);
+                        SceneManager.LoadScene(levelIndex);
                     });
                 });
             });
         }
         
+        public void RePlayLevel(string message)
+        {
+            FadeUtility.FadeInAndStay(BlackPanel,80, () =>
+            {
+                LevelHead.text = message;
+                FadeUtility.FadeInAndStay(LevelHead,80, () =>
+                {
+                    FadeUtility.FadeOut(LevelHead,50, () =>
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    });
+                });
+            });
+        }
         
     }
 }
