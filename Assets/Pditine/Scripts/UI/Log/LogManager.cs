@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Pditine.Scripts.Log;
 using Pditine.Scripts.Tool;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Pditine.Scripts.Log
+namespace Pditine.Scripts.UI.Log
 {
-    public class LogManager : MonoSingleton<LogManager>
+    public class LogManager : DDOLMonoSingleton<LogManager>
     {
         [SerializeField] private Image historicalPicture;
         [SerializeField] private Text historicalFactHead;

@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using Pditine.Scripts.LevelSceneManager;
 using UnityEngine;
 using UnityEngine.UI;
 using Pditine.Scripts.Tool;
-using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 namespace Pditine.Scripts.Item
 {
@@ -19,14 +20,33 @@ namespace Pditine.Scripts.Item
         private SoldierState _state = SoldierState.Fire;
         private Animator Animator => GetComponentInChildren<Animator>();
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
+        private float _bulletCountIsZeroTime;
         
         private void Start()
         {
-            ChangeBulletCount(10);
+            ChangeBulletCount(5);
             Fire();
             ContinuousActionUtility.ContinuousAction(1, 3, ChangeState);
         }
 
+        private void FixedUpdate()
+        {
+            CheckBulletIsZero();
+        }
+
+        private void CheckBulletIsZero()
+        {
+            if (_bulletCount > 0)
+            {
+                _bulletCountIsZeroTime = 0;
+                return;
+            }
+
+            _bulletCountIsZeroTime += Time.deltaTime;
+            if(_bulletCountIsZeroTime>3)
+                Level1SceneManager.Instance.FailByAmmo();
+        }
+        
         private void ChangeBulletCount(int x)
         {
             if (_bulletCount + x < 0)
@@ -62,7 +82,13 @@ namespace Pditine.Scripts.Item
             _fireCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, () =>
             {
                 ChangeBulletCount(-1);
+                Animator.SetTrigger("Fire");
             });
+        }
+
+        public void FireOver()
+        {
+            Animator.SetTrigger("FireOver");
         }
         
         public void StopFire()
