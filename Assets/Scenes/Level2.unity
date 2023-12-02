@@ -760,7 +760,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_Follow: {fileID: 1701513871}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 6.78
@@ -1673,30 +1673,6 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1188893251
       objectReference: {fileID: 0}
-    - target: {fileID: 4897184050667644169, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897184050667644169, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897184050667644169, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4897184050667644169, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965440720518524760, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7965440720518524760, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1188893251
-      objectReference: {fileID: 0}
     - target: {fileID: 8368018341154534776, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1754,6 +1730,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
+--- !u!4 &1701513871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8368018341154534776, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
+  m_PrefabInstance: {fileID: 1687953550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785731358
 GameObject:
   m_ObjectHideFlags: 0
