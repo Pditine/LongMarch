@@ -33,7 +33,6 @@ namespace Pditine.Scripts.Item
                 transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
-<<<<<<< HEAD
             while (SpriteRenderer.color.a>0.05f)
             {
                 SpriteRenderer.color -= new Color(0, 0, 0,0.01f);
@@ -54,24 +53,11 @@ namespace Pditine.Scripts.Item
                 SpriteRenderer.color += new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-            _canDead = true;
+            
+            //_canDead = true;
 
             yield return 2;
             Destroy(gameObject);
-=======
-            
-            
-            
->>>>>>> parent of 879203b (do something , whatever)
-=======
-            
->>>>>>> parent of 5147193 (find coroutine problem)
-=======
-            
->>>>>>> parent of 5147193 (find coroutine problem)
         }
 
 
