@@ -55,6 +55,7 @@ namespace Pditine.Scripts.Item
                 yield return new WaitForSeconds(0.02f);
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             _canDead = true;
 
@@ -65,6 +66,9 @@ namespace Pditine.Scripts.Item
             
             
 >>>>>>> parent of 879203b (do something , whatever)
+=======
+            
+>>>>>>> parent of 5147193 (find coroutine problem)
 =======
             
 >>>>>>> parent of 5147193 (find coroutine problem)

@@ -700,6 +700,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &608159513
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +747,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 5147193 (find coroutine problem)
 =======
 >>>>>>> parent of 5147193 (find coroutine problem)
 --- !u!1 &659006382
@@ -3049,9 +3052,12 @@ SceneRoots:
   - {fileID: 890411542}
   - {fileID: 1406864877}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 608159515}
 =======
   - {fileID: 999675000}
 >>>>>>> parent of 652754f (test war scene)
+=======
+>>>>>>> parent of 5147193 (find coroutine problem)
 =======
 >>>>>>> parent of 5147193 (find coroutine problem)

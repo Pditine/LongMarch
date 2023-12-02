@@ -19,9 +19,13 @@ namespace Pditine.Scripts.Item
         private SoldierState _state = SoldierState.Fire;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         private Animator Animator => GetComponent<Animator>();
 =======
 >>>>>>> parent of 652754f (test war scene)
+=======
+        private Animator Animator => GetComponentInChildren<Animator>();
+>>>>>>> parent of 5147193 (find coroutine problem)
 =======
         private Animator Animator => GetComponentInChildren<Animator>();
 >>>>>>> parent of 5147193 (find coroutine problem)
