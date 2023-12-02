@@ -1,5 +1,6 @@
 ﻿using System;
 using Pditine.Scripts.Log;
+using Pditine.Scripts.UI.Log;
 using Unity.Mathematics;
 using UnityEngine;
 

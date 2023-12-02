@@ -1,9 +1,10 @@
 ﻿using System;
+using Hmxs.Toolkit.Base.Singleton;
 using UnityEngine;
 
 namespace Hmxs.Scripts.Protagonist
 {
-    public class ProtagonistController : MonoBehaviour
+    public class ProtagonistController : SingletonMono<ProtagonistController>
     {
         public GameObject interactInfo;
         public float speed;
@@ -64,16 +65,26 @@ namespace Hmxs.Scripts.Protagonist
             _animator.SetBool(IsWalking, Mathf.Abs(_rigidbody.velocity.x) > 0.01);
         }
 
-        private void OnTriggerEnter2D(Collider2D other)
+        public void ShowInteractInfo()
         {
-            if (other.CompareTag("InteractableItem"))
-                interactInfo.SetActive(true);
+            interactInfo.SetActive(true);
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        public void HideInteractInfo()
         {
-            if (other.CompareTag("InteractableItem"))
-                interactInfo.SetActive(false);
+            interactInfo.SetActive(false);
         }
+        
+        // private void OnTriggerEnter2D(Collider2D other)
+        // {
+        //     if (other.CompareTag("InteractableItem"))
+        //         interactInfo.SetActive(true);
+        // }
+        //
+        // private void OnTriggerExit2D(Collider2D other)
+        // {
+        //     if (other.CompareTag("InteractableItem"))
+        //         interactInfo.SetActive(false);
+        // }
     }
 }

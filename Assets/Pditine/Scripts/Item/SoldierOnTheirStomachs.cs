@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
+using Hmxs.Scripts.Protagonist;
+using Pditine.Scripts.LevelSceneManager;
 using UnityEngine;
 using UnityEngine.UI;
 using Pditine.Scripts.Tool;
-using UnityEngine.Serialization;
+using Pditine.Scripts.WarScene;
+using Random = UnityEngine.Random;
 
 namespace Pditine.Scripts.Item
 {
@@ -19,6 +22,7 @@ namespace Pditine.Scripts.Item
         private SoldierState _state = SoldierState.Fire;
         private Animator Animator => GetComponentInChildren<Animator>();
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
+        private float _bulletCountIsZeroTime;
         
         private void Start()
         {
@@ -27,7 +31,25 @@ namespace Pditine.Scripts.Item
             ContinuousActionUtility.ContinuousAction(1, 3, ChangeState);
         }
 
-        private void ChangeBulletCount(int x)
+        private void FixedUpdate()
+        {
+            CheckBulletIsZero();
+        }
+
+        private void CheckBulletIsZero()
+        {
+            if (_bulletCount > 0)
+            {
+                _bulletCountIsZeroTime = 0;
+                return;
+            }
+
+            _bulletCountIsZeroTime += Time.deltaTime;
+            if(_bulletCountIsZeroTime>3)
+                Level1SceneManager.Instance.FailByAmmo();
+        }
+        
+        public void ChangeBulletCount(int x)
         {
             if (_bulletCount + x < 0)
             {
@@ -62,7 +84,13 @@ namespace Pditine.Scripts.Item
             _fireCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, () =>
             {
                 ChangeBulletCount(-1);
+                Animator.SetTrigger("Fire");
             });
+        }
+
+        public void FireOver()
+        {
+            Animator.SetTrigger("FireOver");
         }
         
         public void StopFire()
@@ -72,18 +100,19 @@ namespace Pditine.Scripts.Item
         
         protected override void PressEAction()
         {
-            //todo:check player has ammo or not
-            ChangeBulletCount(5);
+            if(PlayerGetAmmo.Instance.CheckAndGiveAmmo())
+                ChangeBulletCount(5);
         }
 
         protected override void PlayerEnterAction()
         {
-
+            if(PlayerGetAmmo.Instance.HasAmmo)
+                ProtagonistController.Instance.ShowInteractInfo();
         }
 
         protected override void PlayerExitAction()
         {
-
+            ProtagonistController.Instance.HideInteractInfo();
         }
 
         protected override void PlayerStayAction()

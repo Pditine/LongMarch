@@ -2,6 +2,7 @@
 using Hmxs.Toolkit.Base.Singleton;
 using Pditine.Scripts.Tool;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 namespace Pditine.Scripts
@@ -32,7 +33,7 @@ namespace Pditine.Scripts
             });
         }
         
-        public void RePlayLevel(string message)
+        public void RePlayLevel(string message,UnityAction callBack)
         {
             FadeUtility.FadeInAndStay(BlackPanel,80, () =>
             {
@@ -41,7 +42,7 @@ namespace Pditine.Scripts
                 {
                     FadeUtility.FadeOut(LevelHead,50, () =>
                     {
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                        FadeUtility.FadeOut(BlackPanel,80,callBack);
                     });
                 });
             });

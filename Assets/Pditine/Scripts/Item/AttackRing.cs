@@ -11,6 +11,7 @@ namespace Pditine.Scripts.Item
         private void Start()
         {
             StartCoroutine(DoAttack());
+            
         }
 
         private IEnumerator DoAttack()
@@ -55,7 +56,9 @@ namespace Pditine.Scripts.Item
                 SpriteRenderer.color += new Color(0, 0, 0,0.01f);
                 yield return new WaitForSeconds(0.02f);
             }
-            
+            _canDead = true;
+            yield return 2;
+            Destroy(gameObject);
         }
 
 
