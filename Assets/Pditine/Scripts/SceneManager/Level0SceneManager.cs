@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Pditine.Scripts.SceneManager
 {
-    public class Level1SceneManager : MonoBehaviour
+    public class Level0SceneManager : MonoBehaviour
     {
         [SerializeField] private Image logUI;
         [SerializeField] private Image playUI;
@@ -19,7 +19,7 @@ namespace Pditine.Scripts.SceneManager
             FadeUtility.FadeInAndStay(logUI,60);
             FadeUtility.FadeOut(playUI,100);
             FadeUtility.FadeOut(exitUI,100);
-            Invoke(nameof(PlayerCanMove),2.5f);
+            Invoke(nameof(PlayerCanMove),4f);
             FlowchartManager.ExecuteBlock("GameStart");
         }
 
