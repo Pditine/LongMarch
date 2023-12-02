@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Pditine.Scripts.SceneManager;
 using UnityEngine;
 
 namespace Pditine.Scripts.Item
@@ -6,9 +7,10 @@ namespace Pditine.Scripts.Item
     public class AttackRing : ItemBase
     {
         private SpriteRenderer SpriteRenderer => GetComponent<SpriteRenderer>();
+        private bool _canDead;
         private void Start()
         {
-            
+            StartCoroutine(DoAttack());
         }
 
         private IEnumerator DoAttack()
@@ -54,10 +56,6 @@ namespace Pditine.Scripts.Item
                 yield return new WaitForSeconds(0.02f);
             }
             
-            //_canDead = true;
-
-            yield return 2;
-            Destroy(gameObject);
         }
 
 
@@ -78,7 +76,8 @@ namespace Pditine.Scripts.Item
 
         protected override void PlayerStayAction()
         {
-            //todo:玩家死亡;
+            if(_canDead)
+                Level1SceneManager.Instance.FailByDead();
         }
     }
 }
