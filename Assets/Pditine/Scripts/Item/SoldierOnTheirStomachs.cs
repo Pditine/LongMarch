@@ -17,7 +17,7 @@ namespace Pditine.Scripts.Item
         private Coroutine _fireCoroutine;
         [SerializeField] private List<Sprite> sprites = new();
         private SoldierState _state = SoldierState.Fire;
-        private Animator Animator => GetComponentInChildren<Animator>();
+        private Animator Animator => GetComponent<Animator>();
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
         
         private void Start()

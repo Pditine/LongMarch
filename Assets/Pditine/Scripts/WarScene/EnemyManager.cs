@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using Pditine.Scripts.Tool;
+﻿using Pditine.Scripts.Tool;
 using UnityEngine;
 
 namespace Pditine.Scripts.WarScene
@@ -17,6 +16,8 @@ namespace Pditine.Scripts.WarScene
             _createEnemyCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, CreateEnemy);
         }
 
+        
+        
         public void StopCreateEnemy()
         {
             StopCoroutine(_createEnemyCoroutine);
