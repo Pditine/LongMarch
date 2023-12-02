@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 namespace Pditine.Scripts
 {
-    public class ChangeSceneManager : MonoBehaviour
+    public class ChangeSceneManager : MonoSingleton<ChangeSceneManager>
     {
         private Image BlackPanel =>GameObject.Find("BlackPanel").GetComponent<Image>();
         private Text LevelHead =>GameObject.Find("LevelHead").GetComponent<Text>();
@@ -30,6 +30,20 @@ namespace Pditine.Scripts
             });
         }
         
+        public void ChangeScene(string text)
+        {
+            FadeUtility.FadeInAndStay(BlackPanel,80, () =>
+            {
+                LevelHead.text = text;
+                FadeUtility.FadeInAndStay(LevelHead,80, () =>
+                {
+                    FadeUtility.FadeOut(LevelHead,50, () =>
+                    {
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+                    });
+                });
+            });
+        }
         
     }
 }
