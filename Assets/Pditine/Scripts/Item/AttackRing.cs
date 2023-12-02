@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using Pditine.Scripts.SceneManager;
 using UnityEngine;
 
 namespace Pditine.Scripts.Item
@@ -7,10 +6,9 @@ namespace Pditine.Scripts.Item
     public class AttackRing : ItemBase
     {
         private SpriteRenderer SpriteRenderer => GetComponent<SpriteRenderer>();
-        private bool _canDead;
         private void Start()
         {
-            StartCoroutine(DoAttack());
+            
         }
 
         private IEnumerator DoAttack()
@@ -35,6 +33,7 @@ namespace Pditine.Scripts.Item
                 transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
                 yield return new WaitForSeconds(0.02f);
             }
+<<<<<<< HEAD
             while (SpriteRenderer.color.a>0.05f)
             {
                 SpriteRenderer.color -= new Color(0, 0, 0,0.03f);
@@ -60,6 +59,11 @@ namespace Pditine.Scripts.Item
 
             yield return 2;
             Destroy(gameObject);
+=======
+            
+            
+            
+>>>>>>> parent of 879203b (do something , whatever)
         }
 
 
@@ -80,8 +84,7 @@ namespace Pditine.Scripts.Item
 
         protected override void PlayerStayAction()
         {
-            if(_canDead)
-                Level1SceneManager.Instance.FailByDead();
+            //todo:玩家死亡;
         }
     }
 }
