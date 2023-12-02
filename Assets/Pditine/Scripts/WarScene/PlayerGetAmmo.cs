@@ -1,25 +1,27 @@
 ﻿using Pditine.Scripts.Tool;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Pditine.Scripts.WarScene
 {
     public class PlayerGetAmmo : MonoSingleton<PlayerGetAmmo>
     {
         private bool _hasAmmo;
-        private GameObject _ammoIcon;
+        public bool HasAmmo => _hasAmmo;
+        [SerializeField]private GameObject ammoIcon;
         
-        private void GetAmmo()
+        public void GetAmmo()
         {
             _hasAmmo = true;
-            _ammoIcon.SetActive(true);
+            ammoIcon.SetActive(true);
         }
 
-        private bool CheckAndGiveAmmo()
+        public bool CheckAndGiveAmmo()
         {
             var hasAmmo = _hasAmmo;
             _hasAmmo = false;
-            _ammoIcon.SetActive(false);
-            return _hasAmmo;
+            ammoIcon.SetActive(false);
+            return hasAmmo;
         }
     }
 }

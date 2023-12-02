@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using Hmxs.Scripts.Protagonist;
 using Pditine.Scripts.LevelSceneManager;
 using UnityEngine;
 using UnityEngine.UI;
 using Pditine.Scripts.Tool;
+using Pditine.Scripts.WarScene;
 using Random = UnityEngine.Random;
 
 namespace Pditine.Scripts.Item
@@ -24,7 +26,7 @@ namespace Pditine.Scripts.Item
         
         private void Start()
         {
-            ChangeBulletCount(5);
+            ChangeBulletCount(10);
             Fire();
             ContinuousActionUtility.ContinuousAction(1, 3, ChangeState);
         }
@@ -47,7 +49,7 @@ namespace Pditine.Scripts.Item
                 Level1SceneManager.Instance.FailByAmmo();
         }
         
-        private void ChangeBulletCount(int x)
+        public void ChangeBulletCount(int x)
         {
             if (_bulletCount + x < 0)
             {
@@ -98,18 +100,19 @@ namespace Pditine.Scripts.Item
         
         protected override void PressEAction()
         {
-            //todo:check player has ammo or not
-            ChangeBulletCount(5);
+            if(PlayerGetAmmo.Instance.CheckAndGiveAmmo())
+                ChangeBulletCount(5);
         }
 
         protected override void PlayerEnterAction()
         {
-
+            if(PlayerGetAmmo.Instance.HasAmmo)
+                ProtagonistController.Instance.ShowInteractInfo();
         }
 
         protected override void PlayerExitAction()
         {
-
+            ProtagonistController.Instance.HideInteractInfo();
         }
 
         protected override void PlayerStayAction()

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Hmxs.Scripts.Protagonist;
+using Pditine.Scripts.WarScene;
+using UnityEngine;
 
 namespace Pditine.Scripts.Item
 {
@@ -6,17 +8,20 @@ namespace Pditine.Scripts.Item
     {
         protected override void PressEAction()
         {
-            //todo:get ammo
+            PlayerGetAmmo.Instance.GetAmmo();
         }
 
         protected override void PlayerEnterAction()
         {
-
+            if (!PlayerGetAmmo.Instance.HasAmmo)
+            {
+                ProtagonistController.Instance.ShowInteractInfo();
+            }
         }
 
         protected override void PlayerExitAction()
         {
-
+            ProtagonistController.Instance.HideInteractInfo();
         }
 
         protected override void PlayerStayAction()
