@@ -2986,8 +2986,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1353098286}
-  selectedCommands:
-  - {fileID: 1353098290}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -3109,7 +3108,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &1353098290
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
