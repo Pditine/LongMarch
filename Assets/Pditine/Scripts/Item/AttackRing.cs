@@ -18,42 +18,42 @@ namespace Pditine.Scripts.Item
         {
             while (transform.localScale.x>0.5f)
             {
-                transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+                transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x<0.95f)
             {
-                transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
+                transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x>0.5f)
             {
-                transform.localScale -= new Vector3(0.01f, 0.01f, 0.01f);
+                transform.localScale -= new Vector3(0.02f, 0.02f, 0.02f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (transform.localScale.x<0.95f)
             {
-                transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
+                transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a>0.05f)
             {
-                SpriteRenderer.color -= new Color(0, 0, 0,0.01f);
+                SpriteRenderer.color -= new Color(0, 0, 0,0.03f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a<0.95f)
             {
-                SpriteRenderer.color += new Color(0, 0, 0,0.01f);
+                SpriteRenderer.color += new Color(0, 0, 0,0.03f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a>0.05f)
             {
-                SpriteRenderer.color -= new Color(0, 0, 0,0.01f);
+                SpriteRenderer.color -= new Color(0, 0, 0,0.03f);
                 yield return new WaitForSeconds(0.02f);
             }
             while (SpriteRenderer.color.a<0.95f)
             {
-                SpriteRenderer.color += new Color(0, 0, 0,0.01f);
+                SpriteRenderer.color += new Color(0, 0, 0,0.03f);
                 yield return new WaitForSeconds(0.02f);
             }
             _canDead = true;

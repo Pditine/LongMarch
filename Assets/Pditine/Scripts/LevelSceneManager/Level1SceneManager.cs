@@ -23,6 +23,10 @@ namespace Pditine.Scripts.LevelSceneManager
             ChangeSceneManager.Instance.RePlayLevel("失败——待在敌人的攻击范围外", () =>
             {
                 _warIsOver = false;
+                foreach (var soldier in soldiers)
+                {
+                    soldier.ChangeBulletCount(10);
+                }
             });
         }
 
