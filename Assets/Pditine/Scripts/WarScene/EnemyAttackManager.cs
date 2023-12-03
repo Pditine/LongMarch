@@ -14,7 +14,7 @@ namespace Pditine.Scripts.WarScene
         private void Start()
         {
             _attackRing = Resources.Load<GameObject>("Prefabs/AttackRing");
-            _fireCoroutine = ContinuousActionUtility.ContinuousAction(3f, 5f, Attack);
+            _fireCoroutine = ContinuousActionUtility.ContinuousAction(5f, 8f, Attack);
         }
 
         public void StopFire()
