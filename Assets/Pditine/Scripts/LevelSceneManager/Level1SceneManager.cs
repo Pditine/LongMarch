@@ -48,7 +48,7 @@ namespace Pditine.Scripts.LevelSceneManager
         {
             if (_warIsOver) return;
             _warIsOver = true; 
-            ChangeSceneManager.Instance.ChangeScene(2);
+            ChangeSceneManager.Instance.ChangeScene(3);
         }
     }
 }

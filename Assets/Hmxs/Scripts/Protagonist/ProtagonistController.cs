@@ -24,11 +24,6 @@ namespace Hmxs.Scripts.Protagonist
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        private T GetComponent<T>()
-        {
-            throw new NotImplementedException();
-        }
-
         private void Update()
         {
             InputHandler();
