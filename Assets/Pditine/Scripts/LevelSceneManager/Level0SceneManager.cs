@@ -11,7 +11,7 @@ namespace Pditine.Scripts.LevelSceneManager
         [SerializeField] private Image logUI;
         [SerializeField] private Image playUI;
         [SerializeField] private Image exitUI;
-        [SerializeField] private ProtagonistController player;
+        //[SerializeField] private ProtagonistController player;
 
         public void Play()
         {
@@ -24,7 +24,7 @@ namespace Pditine.Scripts.LevelSceneManager
 
         private void PlayerCanMove()
         {
-            player.enabled = true;
+            ProtagonistController.Instance.enabled = true;
         }
 
         public void Exit()

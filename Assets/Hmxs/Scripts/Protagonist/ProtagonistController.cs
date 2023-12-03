@@ -1,10 +1,9 @@
 ﻿using System;
-using Hmxs.Toolkit.Base.Singleton;
 using UnityEngine;
 
 namespace Hmxs.Scripts.Protagonist
 {
-    public class ProtagonistController : SingletonMono<ProtagonistController>
+    public class ProtagonistController : Pditine.Scripts.Tool.MonoSingleton<ProtagonistController>
     {
         public GameObject interactInfo;
         public float speed;
@@ -23,6 +22,11 @@ namespace Hmxs.Scripts.Protagonist
             _rigidbody = GetComponent<Rigidbody2D>();
             _animator = GetComponent<Animator>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        private T GetComponent<T>()
+        {
+            throw new NotImplementedException();
         }
 
         private void Update()
