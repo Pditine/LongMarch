@@ -1,4 +1,5 @@
 ﻿using System;
+using Hmxs.Scripts.Protagonist;
 using UnityEngine;
 
 namespace Pditine.Scripts.Item
@@ -7,6 +8,7 @@ namespace Pditine.Scripts.Item
     {
         [SerializeField] private Sprite notBeEatSprite;
         [SerializeField] private Sprite hasBeenEatenSprite;
+        private bool _hasBeenEaten;
         private SpriteRenderer SpriteRenderer => GetComponent<SpriteRenderer>();
 
         private void Start()
@@ -16,17 +18,19 @@ namespace Pditine.Scripts.Item
 
         protected override void PressEAction()
         {
+            if (_hasBeenEaten) return;
+            _hasBeenEaten = true;
             BeEaten();
         }
 
         protected override void PlayerEnterAction()
         {
-            //todo:玩家头上的E   
+            ProtagonistController.Instance.ShowInteractInfo();
         }
 
         protected override void PlayerExitAction()
         {
-            //todo:玩家头上的E   
+            ProtagonistController.Instance.HideInteractInfo();
         }
 
         protected override void PlayerStayAction()
