@@ -1,5 +1,7 @@
 ﻿using System;
+using Hmxs.Toolkit.Module.Audios;
 using UnityEngine;
+using AudioType = Hmxs.Toolkit.Module.Audios.AudioType;
 
 namespace Hmxs.Scripts.Protagonist
 {
@@ -29,6 +31,8 @@ namespace Hmxs.Scripts.Protagonist
             InputHandler();
             CheckFlip();
             UpdateAnimState();
+            // if(Mathf.Abs(_rigidbody.velocity.x)>=0.01f)
+            //     AudioCenter.Instance.AudioPlaySync(new AudioAsset(AudioType.Effect,"草地上行走"));
         }
 
         private void FixedUpdate()

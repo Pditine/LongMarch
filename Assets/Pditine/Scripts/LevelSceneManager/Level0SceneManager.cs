@@ -1,8 +1,11 @@
-﻿using Hmxs.Scripts.Protagonist;
+﻿using System;
+using Hmxs.Scripts.Protagonist;
 using Hmxs.Toolkit.Flow.FungusTools;
+using Hmxs.Toolkit.Module.Audios;
 using Pditine.Scripts.Tool;
 using UnityEngine;
 using UnityEngine.UI;
+using AudioType = Hmxs.Toolkit.Module.Audios.AudioType;
 
 namespace Pditine.Scripts.LevelSceneManager
 {
@@ -12,6 +15,11 @@ namespace Pditine.Scripts.LevelSceneManager
         [SerializeField] private Image playUI;
         [SerializeField] private Image exitUI;
         //[SerializeField] private ProtagonistController player;
+
+        private void Start()
+        {
+            AudioCenter.Instance.AudioPlaySync(new AudioAsset(AudioType.BGM,"纯音乐 - 红星照我去战斗", isLoop: true));
+        }
 
         public void Play()
         {

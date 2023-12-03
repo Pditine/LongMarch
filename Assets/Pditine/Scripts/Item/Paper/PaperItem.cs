@@ -15,7 +15,7 @@ namespace Pditine.Scripts.Item.Paper
         private void Start()
         {
             _floatingEffect = Resources.Load<GameObject>("Prefabs/PaperFloatingEffect");
-            _canvas = GameObject.Find("Canvas").transform;
+            _canvas = GameObject.Find("BasicCanvas").transform;
         }
 
         protected override void PressEAction()

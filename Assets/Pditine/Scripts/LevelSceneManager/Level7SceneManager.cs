@@ -1,10 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Hmxs.Scripts.Protagonist;
+using Hmxs.Toolkit.Module.Audios;
 using Pditine.Scripts.Tool;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using AudioType = Hmxs.Toolkit.Module.Audios.AudioType;
 
 namespace Pditine.Scripts.LevelSceneManager
 {
@@ -18,6 +21,11 @@ namespace Pditine.Scripts.LevelSceneManager
         private int _pictureIndex;
         private bool _canMoveText;
         private Coroutine _doChangePicture;
+
+        private void Start()
+        {
+            AudioCenter.Instance.AudioPlaySync(new AudioAsset(AudioType.BGM,"纯音乐 - 红星照我去战斗", isLoop: true));
+        }
 
         public void GameEnd()
         {

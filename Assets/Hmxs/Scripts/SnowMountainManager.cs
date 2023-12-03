@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Cinemachine;
+using Hmxs.Toolkit.Module.Audios;
 using UnityEngine;
 
 namespace Hmxs.Scripts
@@ -12,6 +14,11 @@ namespace Hmxs.Scripts
         public CinemachineConfiner2D confiner;
         public Transform protagonist;
         public Transform camera;
+
+        private void Start()
+        {
+            AudioCenter.Instance.AudioPlaySync(new AudioAsset(Toolkit.Module.Audios.AudioType.BGM,"暴雪天气",isLoop: true));
+        }
 
         public void DistrictTransit(int districtNumber)
         {

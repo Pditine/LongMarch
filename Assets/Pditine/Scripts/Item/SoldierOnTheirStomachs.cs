@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
 using Hmxs.Scripts.Protagonist;
+using Hmxs.Toolkit.Module.Audios;
 using Pditine.Scripts.LevelSceneManager;
 using UnityEngine;
 using UnityEngine.UI;
 using Pditine.Scripts.Tool;
 using Pditine.Scripts.WarScene;
+using AudioType = Hmxs.Toolkit.Module.Audios.AudioType;
 using Random = UnityEngine.Random;
 
 namespace Pditine.Scripts.Item
@@ -85,6 +87,7 @@ namespace Pditine.Scripts.Item
             {
                 ChangeBulletCount(-1);
                 Animator.SetTrigger("Fire");
+                AudioCenter.Instance.AudioPlaySync(new AudioAsset(AudioType.Effect,"单发子弹"));
             });
         }
 

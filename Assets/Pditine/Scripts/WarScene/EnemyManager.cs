@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Hmxs.Toolkit.Flow.Timer;
 using Pditine.Scripts.Tool;
 using UnityEngine;
 
@@ -15,12 +16,13 @@ namespace Pditine.Scripts.WarScene
         private void Start()
         {
             _createEnemyCoroutine = ContinuousActionUtility.ContinuousAction(0f,2f, CreateEnemy);
+            //Timer.Register(2, CreateEnemy, isLooped: true);
         }
 
-        public void StopCreateEnemy()
-        {
-            StopCoroutine(_createEnemyCoroutine);
-        }
+        // public void StopCreateEnemy()
+        // {
+        //     StopCoroutine(_createEnemyCoroutine);
+        // }
 
         private void CreateEnemy()
         {

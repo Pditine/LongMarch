@@ -1,6 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Pditine.Scripts.Log;
 using Pditine.Scripts.Tool;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,9 +17,15 @@ namespace Pditine.Scripts.UI.Log
         [SerializeField] private List<LogData> allData = new();
         [SerializeField] private float maxHeight;
         [SerializeField] private float maxWidth;
+        [SerializeField] private GameObject canvas;
         private readonly List<LogData> _collectedData = new();
         private int _currentIndex;
-        
+
+        private void Start()
+        {
+            DontDestroyOnLoad(canvas);
+            CollectData(0);
+        }
 
         public void TernLeft()
         {
