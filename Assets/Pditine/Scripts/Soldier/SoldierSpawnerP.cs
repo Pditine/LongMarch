@@ -14,18 +14,20 @@ namespace Pditine.Scripts.Soldier
 
         private void Start()
         {
+            Debug.Log("START");
             _spawnTimer = Timer.Register(
                 duration: spawnInterval,
                 onComplete: () =>
                 {
+                    Debug.Log("1");
                     var soldier = Instantiate(soldierPrefabList[Random.Range(0, soldierPrefabList.Count)], transform);
                     var soldierController = soldier.GetComponentInChildren<SoldierController>();
                     soldierController.movePoint.Clear();
                     foreach (var targetPoint in targetPoints) soldierController.movePoint.Add(targetPoint);
                 },
-                isLooped: true);
+                isLooped: true, owner: this);
         }
 
-        private void OnDisable() => Timer.Remove(_spawnTimer);
+       // private void OnDisable() => Timer.Remove(_spawnTimer);
     }
 }
