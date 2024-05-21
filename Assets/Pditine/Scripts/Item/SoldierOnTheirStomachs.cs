@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using HighlightPlus2D;
 using Hmxs.Scripts.Protagonist;
 using Hmxs.Toolkit.Module.Audios;
 using Pditine.Scripts.LevelSceneManager;
@@ -25,6 +26,8 @@ namespace Pditine.Scripts.Item
         private Animator Animator => GetComponentInChildren<Animator>();
         private SpriteRenderer SpriteRenderer => GetComponentInChildren<SpriteRenderer>();
         private float _bulletCountIsZeroTime;
+
+        public HighlightEffect2D highlightEffect;
         
         private void Start()
         {
@@ -98,24 +101,29 @@ namespace Pditine.Scripts.Item
         
         public void StopFire()
         {
-            StopCoroutine(_fireCoroutine);
+            ContinuousActionUtility.StopCoroutine(_fireCoroutine);
         }
         
         protected override void PressEAction()
         {
             if(PlayerGetAmmo.Instance.CheckAndGiveAmmo())
+            {
                 ChangeBulletCount(5);
+                highlightEffect.highlighted = false;
+            }
         }
 
         protected override void PlayerEnterAction()
         {
-            if(PlayerGetAmmo.Instance.HasAmmo)
-                ProtagonistController.Instance.ShowInteractInfo();
+            if (PlayerGetAmmo.Instance.HasAmmo)
+                highlightEffect.highlighted = true;
+            //ProtagonistController.Instance.ShowInteractInfo();
         }
 
         protected override void PlayerExitAction()
         {
-            ProtagonistController.Instance.HideInteractInfo();
+            highlightEffect.highlighted = false;
+            //ProtagonistController.Instance.HideInteractInfo();
         }
 
         protected override void PlayerStayAction()

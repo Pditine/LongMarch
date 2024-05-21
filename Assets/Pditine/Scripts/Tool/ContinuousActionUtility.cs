@@ -11,6 +11,11 @@ namespace Pditine.Scripts.Tool
         {
             return MonoManager.Instance.StartCoroutine(DoContinuousAction(minTime,maxTime, action));
         }
+
+        public static void StopCoroutine(Coroutine enumerator)
+        {
+            MonoManager.Instance.StopCoroutine(enumerator);
+        }
         
         private static IEnumerator DoContinuousAction(float minTime, float maxTime ,UnityAction action)
         {

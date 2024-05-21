@@ -1,7 +1,4 @@
-﻿using System;
-using Hmxs.Toolkit.Module.Audios;
-using UnityEngine;
-using AudioType = Hmxs.Toolkit.Module.Audios.AudioType;
+﻿using UnityEngine;
 
 namespace Hmxs.Scripts.Protagonist
 {
@@ -68,15 +65,15 @@ namespace Hmxs.Scripts.Protagonist
             _animator.SetBool(IsWalking, Mathf.Abs(_rigidbody.velocity.x) > 0.01);
         }
 
-        public void ShowInteractInfo()
-        {
-            interactInfo.SetActive(true);
-        }
-
-        public void HideInteractInfo()
-        {
-            interactInfo.SetActive(false);
-        }
+        // public void ShowInteractInfo()
+        // {
+        //     interactInfo.SetActive(true);
+        // }
+        //
+        // public void HideInteractInfo()
+        // {
+        //     interactInfo.SetActive(false);
+        // }
         
         // private void OnTriggerEnter2D(Collider2D other)
         // {

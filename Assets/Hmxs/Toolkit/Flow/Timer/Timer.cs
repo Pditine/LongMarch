@@ -245,8 +245,6 @@ namespace Hmxs.Toolkit.Flow.Timer
             [SerializeField] [ReadOnly] private List<Timer> timers = new();
             [SerializeField] [ReadOnly] private List<Timer> timersBuffer = new();
 
-            protected override void OnInstanceCreate(TimerManager instance) { }
-
             private void Update()
             {
                 if (timersBuffer.Count > 0)

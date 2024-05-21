@@ -14,6 +14,7 @@ namespace Pditine.Scripts.LevelSceneManager
         [SerializeField] private Image logUI;
         [SerializeField] private Image playUI;
         [SerializeField] private Image exitUI;
+        [SerializeField] private Text titleUI;
         //[SerializeField] private ProtagonistController player;
 
         private void Start()
@@ -24,6 +25,7 @@ namespace Pditine.Scripts.LevelSceneManager
         public void Play()
         {
             FadeUtility.FadeInAndStay(logUI,60);
+            FadeUtility.FadeOut(titleUI, 100);
             FadeUtility.FadeOut(playUI,100);
             FadeUtility.FadeOut(exitUI,100);
             Invoke(nameof(PlayerCanMove),4f);

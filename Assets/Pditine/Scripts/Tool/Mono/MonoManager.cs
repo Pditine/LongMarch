@@ -28,5 +28,10 @@ namespace Pditine.Scripts.Tool.Mono
         {
             return _controller.StartCoroutine(routine);
         }
+
+        public void StopCoroutine(Coroutine routine)
+        {
+            _controller.StopCoroutine(routine);
+        }
     }
 }
