@@ -180,19 +180,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1351.0973
+      value: 1671.8488
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 395.77
+      value: 589.8097
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -845.4165
+      value: -846.2283
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -539.06
+      value: -538.08984
       objectReference: {fileID: 0}
     - target: {fileID: 3771426402109649564, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Name
@@ -240,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u5BF9\u94C1\u67F1\u6765\u8BF4\uFF0C\u8FD9\u4E00\u523B\u65E2\u662F\u65C5\u7A0B\u7684\u7ED3\u675F\uFF0C\u4E5F\u9884\u793A\u7740\u4ED6\u65B0\u751F\u6D3B\u7684\u5F00\u59CB\u3002"
+      value: "\u84DD\u56FE\u5DF2\u7ED8\u5C31\uFF0C\u594B\u8FDB\u6B63\u5F53\u65F6\u3002\u524D\u8FDB\u9053\u8DEF\u4E0A\uFF0C\u6211\u4EEC\u8981\u5927\u529B\u5F18\u626C\u4F1F\u5927\u957F\u5F81\u7CBE\u795E\uFF0C\u6FC0\u52B1\u548C\u9F13\u821E\u5168\u515A\u5168\u519B\u5168\u56FD\u5404\u65CF\u4EBA\u6C11\u7279\u522B\u662F\u9752\u5E74\u4E00\u4EE3\u53D1\u6124\u56FE\u5F3A\u3001\u594B\u53D1\u6709\u4E3A\uFF0C\u7EE7\u7EED\u628A\u9769\u547D\u524D\u8F88\u5F00\u521B\u7684\u4F1F\u5927\u4E8B\u4E1A\u63A8\u5411\u524D\u8FDB\uFF0C\u5728\u5B9E\u73B0\u201C\u4E24\u4E2A\u4E00\u767E\u5E74\u201D\u594B\u6597\u76EE\u6807\u3001\u5B9E\u73B0\u4E2D\u534E\u6C11\u65CF\u4F1F\u5927\u590D\u5174\u4E2D\u56FD\u68A6\u65B0\u7684\u957F\u5F81\u8DEF\u4E0A\u7EED\u5199\u65B0\u7684\u7BC7\u7AE0\u3001\u521B\u9020\u65B0\u7684\u8F89\u714C\uFF01"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled
@@ -362,7 +362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 432.7704
+      value: 541.7839
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -370,7 +370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -538.87
+      value: -538.32495
       objectReference: {fileID: 0}
     - target: {fileID: 3771426402109649564, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Name
@@ -418,7 +418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u94C1\u67F1\u611F\u53D7\u5230\u4E86\u4E00\u79CD\u65B0\u7684\u8D23\u4EFB\u548C\u4F7F\u547D\uFF0C\u4ED6\u7684\u5FC3\u4E2D\u5145\u6EE1\u4E86\u5BF9\u672A\u6765\u7684\u5E0C\u671B\u548C\u51B3\u5FC3\u3002"
+      value: "\u5C31\u662F\u575A\u6301\u72EC\u7ACB\u81EA\u4E3B\u3001\u5B9E\u4E8B\u6C42\u662F\uFF0C\u4E00\u5207\u4ECE\u5B9E\u9645\u51FA\u53D1\u7684\u7CBE\u795E\uFF1B\u5C31\u662F\u987E\u5168\u5927\u5C40\u3001\u4E25\u5B88\u7EAA\u5F8B\u3001\u7D27\u5BC6\u56E2\u7ED3\u7684\u7CBE\u795E\uFF1B\u5C31\u662F\u7D27\u7D27\u4F9D\u9760\u4EBA\u6C11\u7FA4\u4F17\uFF0C\u540C\u4EBA\u6C11\u7FA4\u4F17\u751F\u6B7B\u76F8\u4F9D\u3001\u60A3\u96BE\u4E0E\u5171\u3001\u8270\u82E6\u594B\u6597\u7684\u7CBE\u795E\u3002\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled
@@ -647,6 +647,7 @@ MonoBehaviour:
   logUI: {fileID: 0}
   playUI: {fileID: 0}
   exitUI: {fileID: 0}
+  titleUI: {fileID: 0}
 --- !u!1 &468396583
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0013428, y: -1868}
+  m_AnchoredPosition: {x: 0.0013428, y: 910}
   m_SizeDelta: {x: 1135.7, y: 725.3345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536788283
@@ -974,19 +975,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1541.2476
+      value: 1638.5803
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 369.7768
+      value: 472.7496
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -935.3305
+      value: -934.8439
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -538.25
+      value: -537.7351
       objectReference: {fileID: 0}
     - target: {fileID: 3771426402109649564, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Name
@@ -1034,7 +1035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u94C1\u67F1\u7684\u6218\u53CB\u8F7B\u8F7B\u62CD\u4E86\u62CD\u4ED6\u7684\u80A9\u8180\uFF0C\u5C06\u4ED6\u4ECE\u6C89\u601D\u4E2D\u5524\u9192\u3002\u6218\u53CB\u8138\u4E0A\u867D\u7136\u663E\u9732\u51FA\u65C5\u9014\u7684\u75B2\u60EB\uFF0C\u4F46\u773C\u4E2D\u5374\u95EA\u70C1\u7740\u6EE1\u8DB3\u548C\u575A\u5B9A\u3002\u4ED6\u4EEC\u76F8\u89C6\u4E00\u7B11\uFF0C\u5171\u4EAB\u7740\u8FD9\u80DC\u5229\u7684\u65F6\u523B\u3002\n"
+      value: "\u4F1F\u5927\u7684\u9075\u4E49\u4F1A\u8BAE\uFF0C\u6BDB\u6CFD\u4E1C\u8D77\u4E86\u601D\u60F3\u7075\u9B42\u548C\u4E3B\u5BFC\u6027\u7684\u4F5C\u7528\uFF1B\u56DB\u6E21\u8D64\u6C34\uFF0C\u626D\u8F6C\u4E0D\u5229\u7684\u519B\u4E8B\u5C40\u9762\uFF0C\u6BDB\u6CFD\u4E1C\u662F\u4E3B\u8981\u7684\u51B3\u7B56\u8005\u548C\u5B9E\u9645\u7684\u519B\u4E8B\u6307\u6325\u8005\u3002\u6CA1\u6709\u6BDB\u6CFD\u4E1C\uFF0C\u957F\u5F81\u5C31\u4E0D\u53EF\u80FD\u53D6\u5F97\u5982\u6B64\u7684\u80DC\u5229\uFF0C\u4F1F\u5927\u957F\u5F81\u7CBE\u795E\u5C31\u4E0D\u53EF\u80FD\u5EF6\u7EED\u81F3\u4ECA\u3002\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Color.b
@@ -1140,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u7AD9\u5728\u9AD8\u5730\u4E0A\uFF0C\u94C1\u67F1\u51DD\u89C6\u7740\u5468\u56F4\u7684\u7FA4\u5C71\uFF0C\u5FC3\u4E2D\u6CE2\u6F9C\u8D77\u4F0F\u3002\u4ED6\u56DE\u5FC6\u7740\u957F\u5F81\u8DEF\u4E0A\u7684\u79CD\u79CD\uFF1A\u5D0E\u5C96\u7684\u5C71\u8DEF\uFF0C\u523A\u9AA8\u7684\u96EA\u5C71\u548C\u8349\u5730\uFF0C\u8FD8\u6709\u9014\u4E2D\u727A\u7272\u7684\u6218\u53CB\uFF0C\u5305\u62EC\u4ED6\u6DF1\u7231\u7684\u54E5\u54E5\u3002\u4ED6\u5728\u5185\u5FC3\u6DF1\u5904\u9ED8\u9ED8\u5730\u5411\u54E5\u54E5\u81F4\u610F\uFF0C\u611F\u6168\u7740\u4ED6\u4EEC\u5171\u540C\u8D70\u8FC7\u7684\u8FD9\u6BB5\u8270\u96BE\u65C5\u7A0B\u3002\n"
+      value: "\u4F46\u662F\uFF0C\u82F1\u96C4\u7684\u515A\u548C\u7EA2\u519B\u6700\u7EC8\u6218\u80DC\u4E86\u8FD9\u4E00\u7CFB\u5217\u7684\u8270\u96BE\u9669\u963B\uFF0C\u8D62\u5F97\u4E86\u7EA2\u519B\u957F\u5F81\u7684\u4F1F\u5927\u80DC\u5229\u3002\u8FD9\u4E00\u80DC\u5229\u7684\u53D6\u5F97\uFF0C\u662F\u515A\u548C\u7EA2\u519B\u5171\u540C\u594B\u6597\u7684\u4F1F\u5927\u7ED3\u6676\uFF0C\u4F46\u662F\u6BDB\u6CFD\u4E1C\u5728\u5176\u4E2D\u8D77\u4E86\u6700\u4E3A\u5173\u952E\u7684\u4F5C\u7528\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled
@@ -1627,6 +1628,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 139555181128277376, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
+      propertyPath: speed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 139555181128277376, guid: ba7414b24f4fb0c4ea406a6e353aa173, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2133,7 +2138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3161}
+  m_AnchoredPosition: {x: 0, y: -3420}
   m_SizeDelta: {x: 1135.7144, y: 5197.279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1173678608
@@ -2169,9 +2174,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7ECF\u5386\u4E86\u6F2B\u957F\u800C\u8270\u82E6\u7684\u957F\u5F81\uFF0C\u94C1\u67F1\u548C\u7EA2\u519B\u7EC8\u4E8E\u62B5\u8FBE\u4E86\u9655\u5317\u7684\u5B89\u5168\u5730\u5E26\u3002\n\n\u5929\u8FB9\u7684\u6668\u66E6\u521A\u5F00\u59CB\u6CDB\u8D77\u5149\u8F89\uFF0C\u6807\u5FD7\u7740\u8FD9\u4E00\u8270\u96BE\u65C5\u7A0B\u7684\u7ED3\u675F\u3002\u5BF9\u94C1\u67F1\u800C\u8A00\uFF0C\u8FD9\u4E0D\u4EC5\u662F\u5730\u7406\u4E0A\u7684\u7EC8\u70B9\uFF0C\u66F4\u662F\u4ED6\u5FC3\u7075\u5386\u7A0B\u7684\u4E00\u4E2A\u91CD\u8981\u91CC\u7A0B\u7891\u3002\n\n\u7AD9\u5728\u9AD8\u5730\u4E0A\uFF0C\u94C1\u67F1\u51DD\u89C6\u7740\u5468\u56F4\u7684\u7FA4\u5C71\uFF0C\u5FC3\u4E2D\u6CE2\u6F9C\u8D77\u4F0F\u3002\u4ED6\u56DE\u5FC6\u7740\u957F\u5F81\u8DEF\u4E0A\u7684\u79CD\u79CD\uFF1A\u5D0E\u5C96\u7684\u5C71\u8DEF\uFF0C\u523A\u9AA8\u7684\u96EA\u5C71\u548C\u8349\u5730\uFF0C\u8FD8\u6709\u9014\u4E2D\u727A\u7272\u7684\u6218\u53CB\uFF0C\u5305\u62EC\u4ED6\u6DF1\u7231\u7684\u54E5\u54E5\u3002\u4ED6\u5728\u5185\u5FC3\u6DF1\u5904\u9ED8\u9ED8\u5730\u5411\u54E5\u54E5\u81F4\u610F\uFF0C\u611F\u6168\u7740\u4ED6\u4EEC\u5171\u540C\u8D70\u8FC7\u7684\u8FD9\u6BB5\u8270\u96BE\u65C5\u7A0B\u3002\n\n\u94C1\u67F1\u7684\u6218\u53CB\u8F7B\u8F7B\u62CD\u4E86\u62CD\u4ED6\u7684\u80A9\u8180\uFF0C\u5C06\u4ED6\u4ECE\u6C89\u601D\u4E2D\u5524\u9192\u3002\u6218\u53CB\u8138\u4E0A\u867D\u7136\u663E\u9732\u51FA\u65C5\u9014\u7684\u75B2\u60EB\uFF0C\u4F46\u773C\u4E2D\u5374\u95EA\u70C1\u7740\u6EE1\u8DB3\u548C\u575A\u5B9A\u3002\u4ED6\u4EEC\u76F8\u89C6\u4E00\u7B11\uFF0C\u5171\u4EAB\u7740\u8FD9\u80DC\u5229\u7684\u65F6\u523B\u3002\n\n\u867D\u7136\u957F\u5F81\u7ED3\u675F\u4E86\uFF0C\u4F46\u94C1\u67F1\u6E05\u695A\u5730\u77E5\u9053\uFF0C\u4ED6\u4EEC\u7684\u6597\u4E89\u8FD8\u8FDC\u672A\u7ED3\u675F\u3002\u73B0\u5728\uFF0C\u4ED6\u4EEC\u53EF\u4EE5\u5728\u8FD9\u7247\u6682\u65F6\u5E73\u9759\u7684\u571F\u5730\u4E0A\u7A0D\u4F5C\u4F11\u606F\uFF0C\u4E3A\u63A5\u4E0B\u6765\u7684\u6311\u6218\u6062\u590D\u529B\u91CF\u3002\u94C1\u67F1\u611F\u53D7\u5230\u4E86\u4E00\u79CD\u65B0\u7684\u8D23\u4EFB\u548C\u4F7F\u547D\uFF0C\u4ED6\u7684\u5FC3\u4E2D\u5145\u6EE1\u4E86\u5BF9\u672A\u6765\u7684\u5E0C\u671B\u548C\u51B3\u5FC3\u3002\n\n\u968F\u7740\u6668\u66E6\u7684\u7B2C\u4E00\u7F15\u9633\u5149\u8F7B\u8F7B\u6D12\u5728\u4ED6\u7684\u8138\u4E0A\uFF0C\u94C1\u67F1\u6DF1\u5438\u4E00\u53E3\u6C14\uFF0C\u5185\u5FC3\u6DF1\u5904\u6D8C\u52A8\u7740\u5BF9\u65B0\u5F00\u59CB\u7684\u671F\u5F85\u3002\n\n\u5BF9\u94C1\u67F1\u6765\u8BF4\uFF0C\u8FD9\u4E00\u523B\u65E2\u662F\u65C5\u7A0B\u7684\u7ED3\u675F\uFF0C\u4E5F\u9884\u793A\u7740\u4ED6\u65B0\u751F\u6D3B\u7684\u5F00\u59CB\u3002\n\n-------------------------------------------\n              
-    <b>\u5236\u4F5C\u4EBA\u5458</b>\n\u6587\u6848: \u51AF\u7855\n\u7A0B\u5E8F: \u4F0D\u6CFD\u534E
-    \u674E\u5065\u8C6A\n\u7F8E\u672F: \u4E8E\u7949\u79BE \u738B\u96C5\u6960 \u9B4F\u53EF\u6B23\n-------------------------------------------\n"
+  m_Text: "\n\n-------------------------------------------\n               <b>\u5236\u4F5C\u4EBA\u5458</b>\n\u6587\u6848:
+    \u987E\u5BB8\u5F66\n\u914D\u97F3: \u5F20\u9526\u751F\n\u89C6\u9891: \u5F20\u5BB6\u5BCC\n\u7A0B\u5E8F:
+    \u4F0D\u6CFD\u534E \u674E\u5065\u8C6A\n\u7F8E\u672F: \u4E8E\u7949\u79BE \u738B\u96C5\u6960
+    \u9B4F\u53EF\u6B23\n\n\u7279\u522B\u9E23\u8C22: \n\u4E8E\u7949\u79BE \u738B\u96C5\u6960
+    \u9B4F\u53EF\u6B23 \u51AF\u7855\n-------------------------------------------\n"
 --- !u!222 &1173678609
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2819,7 +2826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1786}
+  m_AnchoredPosition: {x: 0, y: -801}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1942807292
@@ -2844,7 +2851,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 518.5485
+      value: 576.9476
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2852,7 +2859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -538.51
+      value: -538.218
       objectReference: {fileID: 0}
     - target: {fileID: 3771426402109649564, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Name
@@ -2900,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u867D\u7136\u957F\u5F81\u7ED3\u675F\u4E86\uFF0C\u4F46\u94C1\u67F1\u6E05\u695A\u5730\u77E5\u9053\uFF0C\u4ED6\u4EEC\u7684\u6597\u4E89\u8FD8\u8FDC\u672A\u7ED3\u675F\u3002\u73B0\u5728\uFF0C\u4ED6\u4EEC\u53EF\u4EE5\u5728\u8FD9\u7247\u6682\u65F6\u5E73\u9759\u7684\u571F\u5730\u4E0A\u7A0D\u4F5C\u4F11\u606F\uFF0C\u4E3A\u63A5\u4E0B\u6765\u7684\u6311\u6218\u6062\u590D\u529B\u91CF\u3002"
+      value: "\u4F1F\u5927\u957F\u5F81\u7CBE\u795E\uFF0C\u5C31\u662F\u628A\u5168\u56FD\u4EBA\u6C11\u548C\u4E2D\u534E\u6C11\u65CF\u7684\u6839\u672C\u5229\u76CA\u770B\u5F97\u9AD8\u4E8E\u4E00\u5207\uFF0C\u575A\u5B9A\u9769\u547D\u7684\u7406\u60F3\u548C\u4FE1\u5FF5\uFF0C\u575A\u4FE1\u6B63\u4E49\u4E8B\u4E1A\u5FC5\u7136\u80DC\u5229\u7684\u7CBE\u795E\uFF1B\u5C31\u662F\u4E3A\u4E86\u6551\u56FD\u6551\u6C11\uFF0C\u4E0D\u6015\u4EFB\u4F55\u8270\u96BE\u9669\u963B\uFF0C\u4E0D\u60DC\u4ED8\u51FA\u4E00\u5207\u727A\u7272\u7684\u7CBE\u795E\uFF1B"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled
@@ -3186,19 +3193,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1650.0857
+      value: 1756.0061
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 441.8358
+      value: 600.7172
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -866.9284
+      value: -867.458
       objectReference: {fileID: 0}
     - target: {fileID: 3715617985902612187, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -539.07666
+      value: -538.2822
       objectReference: {fileID: 0}
     - target: {fileID: 3771426402109649564, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Name
@@ -3246,7 +3253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u968F\u7740\u6668\u66E6\u7684\u7B2C\u4E00\u7F15\u9633\u5149\u8F7B\u8F7B\u6D12\u5728\u4ED6\u7684\u8138\u4E0A\uFF0C\u94C1\u67F1\u6DF1\u5438\u4E00\u53E3\u6C14\uFF0C\u5185\u5FC3\u6DF1\u5904\u6D8C\u52A8\u7740\u5BF9\u65B0\u5F00\u59CB\u7684\u671F\u5F85\u3002"
+      value: "\u73B0\u5728\uFF0C\u6211\u4EEC\u6BD4\u5386\u53F2\u4E0A\u4EFB\u4F55\u65F6\u671F\u90FD\u66F4\u63A5\u8FD1\u4E2D\u534E\u6C11\u65CF\u4F1F\u5927\u590D\u5174\u7684\u76EE\u6807\uFF0C\u6BD4\u5386\u53F2\u4E0A\u4EFB\u4F55\u65F6\u671F\u90FD\u66F4\u6709\u4FE1\u5FC3\u3001\u6709\u80FD\u529B\u5B9E\u73B0\u8FD9\u4E2A\u76EE\u6807\u3002\u6211\u4EEC\u8FD9\u4E00\u4EE3\u4EBA\uFF0C\u7EE7\u627F\u4E86\u524D\u4EBA\u7684\u4E8B\u4E1A\uFF0C\u8FDB\u884C\u7740\u4ECA\u5929\u7684\u594B\u6597\uFF0C\u66F4\u8981\u5F00\u8F9F\u660E\u5929\u7684\u9053\u8DEF\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled
@@ -3394,6 +3401,10 @@ PrefabInstance:
       propertyPath: levelHeads.Array.data[0]
       value: "\u4E3A\u4EBA\u6C11\u670D\u52A1"
       objectReference: {fileID: 0}
+    - target: {fileID: 6682414040751974632, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8319260533650801170, guid: f56f11cc98bf1a340bdfb61692ce369f, type: 3}
       propertyPath: m_RenderMode
       value: 0
@@ -3514,7 +3525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Text
-      value: "\u7ECF\u5386\u4E86\u6F2B\u957F\u800C\u8270\u82E6\u7684\u957F\u5F81\uFF0C\u94C1\u67F1\u548C\u7EA2\u519B\u7EC8\u4E8E\u62B5\u8FBE\u4E86\u9655\u5317\u7684\u5B89\u5168\u5730\u5E26\u3002\u5929\u8FB9\u7684\u6668\u66E6\u521A\u5F00\u59CB\u6CDB\u8D77\u5149\u8F89\uFF0C\u6807\u5FD7\u7740\u8FD9\u4E00\u8270\u96BE\u65C5\u7A0B\u7684\u7ED3\u675F\u3002\u5BF9\u94C1\u67F1\u800C\u8A00\uFF0C\u8FD9\u4E0D\u4EC5\u662F\u5730\u7406\u4E0A\u7684\u7EC8\u70B9\uFF0C\u66F4\u662F\u4ED6\u5FC3\u7075\u5386\u7A0B\u7684\u4E00\u4E2A\u91CD\u8981\u91CC\u7A0B\u7891\u3002\n"
+      value: "\u957F\u5F81\u662F\u6211\u515A\u5386\u53F2\u4E0A\u6700\u4E3A\u8270\u96BE\u7684\u5386\u53F2\u65F6\u671F\uFF0C\u4E5F\u662F\u515A\u548C\u7EA2\u519B\u7531\u5931\u8D25\u8D70\u5411\u80DC\u5229\uFF0C\u7531\u6D41\u52A8\u4F5C\u6218\u8D70\u5411\u76F8\u5BF9\u7A33\u5B9A\u7684\u6839\u636E\u5730\u4F5C\u6218\u7684\u91CD\u8981\u9636\u6BB5\u3002\u5728\u8FD9\u4E00\u65F6\u671F\uFF0C\u5185\u6709\u738B\u660E\u201C\u5DE6\u201D\u503E\u673A\u4F1A\u4E3B\u4E49\u7B49\u5206\u88C2\u4E3B\u4E49\u7684\u5F71\u54CD\uFF1B\u5916\u6709\u848B\u4ECB\u77F3\u51E0\u5341\u4E07\u5927\u519B\u7684\u56F4\u8FFD\u5835\u622A\u3002"
       objectReference: {fileID: 0}
     - target: {fileID: 8584823958421811341, guid: e05a2f0306765e3439fdbd6984a7e4c7, type: 3}
       propertyPath: m_Enabled

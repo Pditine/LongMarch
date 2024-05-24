@@ -29,7 +29,8 @@ namespace Pditine.Scripts.LevelSceneManager
 
         public void GameEnd()
         {
-            ProtagonistController.Instance.enabled = false;
+            if(ProtagonistController.Instance)
+                ProtagonistController.Instance.enabled = false;
             FadeUtility.FadeInAndStay(blackPanel,80);
             _doChangePicture = StartCoroutine(DoChangePicture());
             _canMoveText = true;
